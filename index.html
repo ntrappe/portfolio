@@ -36,12 +36,22 @@
         </div>
         <div id="nav-actions">
           <a id="nav-menu-mobile">
-            <span id="nav-menu-chevron"></span>
+            <span id="nav-menu-chevron" dir="down" onclick="toggleChevron()"></span>
           </a>
         </div>
       </div>
     </div>
   </header>
   <body id="body"></body>
+  <script>
+    function toggleChevron() {
+      const chevron = document.getElementById("nav-menu-chevron");
+      if (chevron.getAttribute("dir") == "down") {
+        chevron.setAttribute("dir", "up");
+      } else {
+        chevron.setAttribute("dir", "down");
+      }
+    }
+  </script>
   <!-- <script type="module" src="./src/main.tsx"></script> -->
 </html>
