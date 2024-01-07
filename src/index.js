@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import Hello from './Hello.jsx';
+import Hello from './Hello.js';
 import './Hello.css';
 import './assets/fonts/fonts.css';
 
