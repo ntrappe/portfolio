@@ -4,7 +4,8 @@ import Hello from './Hello.jsx';
 import './Hello.css';
 import './assets/fonts/fonts.css';
 
-ReactDOM.createRoot(document.getElementById('hello-section')).render(
+const root = document.getElementById('hello-section');
+ReactDOM.createRoot(root).render(
   <React.StrictMode>
     <Hello/>
   </React.StrictMode>,
